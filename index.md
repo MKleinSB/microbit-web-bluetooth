@@ -1,6 +1,6 @@
 This repository contains examples of using Web Bluetooth with micro:bit.
 
-## [Scan](https://mkleinsb.github.io/microbit-web-bluetooth/blob/master/microbit-web-bluetooth-scan.js)
+## [Scan](https://mkleinsb.github.io/microbit-web-bluetooth/blob/master/microbit-web-bluetooth-scan.html)
 
 Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it prints all the available services and characteristics.
 
