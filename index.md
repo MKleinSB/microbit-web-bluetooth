@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+This repository contains examples of using Web Bluetooth with micro:bit.
 
-You can use the [editor on GitHub](https://github.com/MKleinSB/microbit-web-bluetooth/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## [Scan](https://MKleinSB.github.io/microbit-web-bluetooth/microbit-web-bluetooth-scan.html)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it prints all the available services and characteristics.
 
-### Markdown
+## [Temperature](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-temperature.html)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth Temperature service.
+* **Temperature**: notify temperature data in degrees Celsius.
+* **Temperature Period**: read or write the frequency with which temperature data is reported in milliseconds.
 
-```markdown
-Syntax highlighted code block
+## [UART](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-uart.html)
 
-# Header 1
-## Header 2
-### Header 3
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth UART service.
+* **TX**: indicate the string (micro:bit transmits and browser receives through WebBLE).
+* **RX**: write the string (micro:bit receives and browser transmits through WebBLE).
 
-- Bulleted
-- List
+## [LEDs](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-leds.html)
 
-1. Numbered
-2. List
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth LED service.
+* **LED Matrix State**: read or write the state of the 5x5 LED matrix.
+* **LED Text**: write a text to be displayed in the LED matrix.
+* **Scrolling Delay** : read or write the delay in milliseconds for scrolling the text.
 
-**Bold** and _Italic_ and `Code` text
+## [Buttons](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-button.html)
 
-[Link](url) and ![Image](src)
-```
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth Button service.
+* **Button A State**: notify state of button A (0=not pressed, 1=short pressed, 2=long pressed).
+* **Button B State**: notify state of button B (0=not pressed, 1=short pressed, 2=long pressed).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## [Accelerometer](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-accelerometer.html)
 
-### Jekyll Themes
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth Accelerometer service.
+* **Accelerometer Data**: notify accelerometer data of axes x, y and z.
+* **Accelerometer Period**: read or write the frequency with which accelerometer data is reported in milliseconds.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MKleinSB/microbit-web-bluetooth/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## [Magnetometer](https://ngammarano.github.io/microbit-web-bluetooth/microbit-web-bluetooth-magnetometer.html)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Scan Bluetooth devices whose name starts with "BBC micro:bit". After connecting to a micro:bit via BLE, it allows to interact with the micro:bit through its Bluetooth Magnetometer service.
+* **Magnetometer Data**: notify magnetometer data of axes x, y and z.
+* **Magnetometer Period**: read or write the frequency with which magnetometer data is reported in milliseconds.
+* **Magnetometer Bearing**: notify the compass bearing in degrees from north.
+* **Magnetometer Calibration**: notify or write the calibration state (0=state unknown, 1=calibration requested, 2=calibration completed OK, 3=calibration completed with error).
